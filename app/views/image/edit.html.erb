@@ -1,0 +1,11 @@
+<div class="container">
+  <p>Update image</p>
+  <div class="p-4">
+    <%= form_with model: @image do |form| %>
+      <%= form.text_field :name, placeholder: "Name" %>
+      <%= form.text_field :description, placeholder: "Description" %>
+      <%= form.submit %>
+    <% end %>
+  </div>
+  <%= link_to "Go to home", root_path %>
+</div>

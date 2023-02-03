@@ -1,9 +1,9 @@
 import { Controller } from "@hotwired/stimulus"
 
-// Connects to data-controller="home"
+// Connects to data-controller="image"
 export default class extends Controller {
   connect() {
-    console.log("home controller has been connected"); 
+    console.log("image controller has been connected");
 
        $( "#datepicker" ).datepicker();
 

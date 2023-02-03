@@ -1,0 +1,11 @@
+<div class="container">
+  <h1> show image</h1>
+  <div class="p-4">
+
+      <%= @single_image.name %>
+    <hr>
+      <%= @single_image.description %>
+  </div>
+  <%= link_to "Go to home", root_path %>
+  <%= link_to "create new image", new_image_path %>
+</div>
