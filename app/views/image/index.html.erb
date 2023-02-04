@@ -12,27 +12,28 @@
 
     <% @images.each do |single_image| %>
       <div class="col-sm-6 col-md-3 mb-4 text-center">
-        <div style="position: absolute; margin-left: 220px;" class="btn-group dropstart">
+        <div style="" class="btn-group dropstart">
           <i
             type="button"
             data-bs-toggle="dropdown"
             aria-expanded="false"
-            class="fas fa-ellipsis-vertical"
+            class="fa fa-cog fa-lg"
             role="button"
             data-bs-auto-close="outside"
           >
           </i>
           <ul class="dropdown-menu">
             <li>
-              <a class="dropdown-item task-edit" href="#">Edit</a>
+              <%= link_to "Update", edit_image_path(single_image), class:"dropdown-item" %>
+
             </li>
             <li>
-              <a class="dropdown-item task-delete" href="#">Delete</a>
+              <%= link_to 'Delete', image_path(single_image),class: "dropdown-item", method: :delete, data: { confirm: 'Are you sure?' } %>
+
             </li>
           </ul>
         </div>
         <a data-fancybox="gallery" data-src=" <%= url_for(single_image.main_image) %> " data-caption=" <%= single_image.name %> ">
-
           <% if single_image.main_image.attached? %>
             <%= image_tag single_image.main_image %>
           <% end %>
