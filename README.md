@@ -21,10 +21,10 @@ To run this application you don't need to install ruby or ruby on rails on your 
 
 To build a docker image. Open the terminal from your project directory.
 ````
-docker build . -t My-Lightbox-Photo-Gallery
+docker build . -t my_lightbox_photo_gallery
 ````
 Build and Run the container.
 ````
-docker run -p 3000:3000 My-Lightbox-Photo-Gallery
+docker run -p 3000:3000 my_lightbox_photo_gallery
 ````
 After running the container. Go to the browser and curl http://localhost:3000
