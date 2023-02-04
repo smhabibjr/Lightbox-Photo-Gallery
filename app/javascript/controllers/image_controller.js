@@ -3,8 +3,9 @@ import { Controller } from "@hotwired/stimulus"
 // Connects to data-controller="image"
 export default class extends Controller {
   connect() {
-    console.log("hi there");
-
+    $("#reload_slide_show").click(function (e){
+      location.reload();
+    })
 
 
   }

@@ -1,7 +1,12 @@
 <section data-controller="image" class="container mt-5">
-  <h1 class="text-center my-5">PHOTO GALLERY <br>Bootstrap 5 and Fancybox 4</h1>
+  <h1 class="text-center my-5">Lightbox Photo Gallery</h1>
 
-  <p class="text-center mb-5">NOTE: Fancybox-4 is still in Alpha. Be sure to check <a href="https://www.npmjs.com/package/@fancyapps/ui">CDN</a> for updates before using in production.</p>
+  <p class="text-center mb-5">
+    <%= link_to "Upload new image", new_image_path, class: "btn btn-primary" %>
+    <button type="button" title="If slide show does not work. Refresh the page!" id="reload_slide_show" class="btn btn-light m-4"> <i class="fa fa-refresh fa-lg" aria-hidden="true"></i> </button>
+
+
+  </p>
 
   <article class="row row-cols-1 row-cols-sm-2 g-2 d-flex justify-content-center">
 
@@ -43,75 +48,4 @@
     <% end %>
 
   </article>
-
-  <%= link_to "create new image", new_image_path %>
-
-  <!-- single clone item -->
-  <div
-    class="clone-new-task card m-1 list-group-item single-task"
-  >
-    <div class="row d-flex justify-content-between">
-      <input type="hidden" id="task_id" value="0" />
-      <input type="hidden" id="stage" value="in-todo-list" />
-      <div class="col-10">
-        <h6 id="task-category-name"></h6>
-      </div>
-      <div class="col-2 d-flex justify-content-end">
-        <div class="btn-group dropstart">
-          <i
-            type="button"
-            data-bs-toggle="dropdown"
-            aria-expanded="false"
-            class="fas fa-ellipsis-vertical"
-            role="button"
-          >
-          </i>
-          <ul class="dropdown-menu">
-            <li>
-              <a class="dropdown-item task-edit" href="#">Edit</a>
-            </li>
-            <li>
-              <a class="dropdown-item task-delete" href="#">Delete</a>
-            </li>
-            <li>
-              <a class="dropdown-item task-move-to-history" href="#"
-              >Move to History</a
-              >
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-12">
-        <h5 class="single-task-name">This is task name</h5>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-6 d-flex justify-content-start">
-        <p class="task-assigned-date">Assigned: 25.10.2022</p>
-      </div>
-
-      <div class="col-6 d-flex justify-content-end">
-        <p class="task-submit-date">submit : 25.10.2022</p>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-6 d-flex justify-content-start">
-        <img
-          style="width: 20px; height: 20px"
-          src="./asset/user-image/77775.jpg"
-          class="rounded-circle"
-          alt="Cinque Terre"
-          />
-        <div id="task-user-name">Habib</div>
-      </div>
-      <div class="col-6 d-flex justify-content-end">
-        <p class="task-due-date">Due 10 days</p>
-      </div>
-    </div>
-  </div>
 </section>
