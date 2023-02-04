@@ -1,3 +1,36 @@
 @import "bootstrap";
 
 @import "jquery-ui.css";
+
+body {
+  font-family: sans-serif;
+  padding: 1rem;
+}
+/*
+a {
+display: inline-block;
+color: #0891b2;
+cursor: pointer;
+text-decoration: underline;
+text-underline-offset: 1px;
+} */
+
+/* a:hover {
+color: #155e75;
+}
+ */
+/* p {
+padding: 0.5rem 0;
+} */
+
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+figcaption {
+  text-align: center;
+  font-size: 14px;
+  margin-top: 5px;
+}

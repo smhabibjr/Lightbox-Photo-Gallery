@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>RubyOnRailsStarterUsingImportmap</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
+<head>
+  <title>RubyOnRailsStarterUsingImportmap</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"/>
+  <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+  <%= javascript_importmap_tags %>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+</head>
 
-    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
-    <%= javascript_importmap_tags %>
-  </head>
+<body>
+<%= render 'shared/navbar' %>
 
-  <body>
-    <%= render 'shared/navbar' %>
-    
-    <%= yield %>
-  </body>
+<%= yield %>
+</body>
 </html>
