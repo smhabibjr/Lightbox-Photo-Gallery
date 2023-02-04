@@ -5,6 +5,7 @@
       <%= @single_image.name %>
     <hr>
       <%= @single_image.description %>
+    <%= image_tag @single_image.main_image %>
   </div>
   <%= link_to "Go to home", root_path %>
   <%= link_to "create new image", new_image_path %>

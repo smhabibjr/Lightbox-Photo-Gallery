@@ -4,6 +4,7 @@
     <%= form_with model: @image do |form| %>
       <%= form.text_field :name, placeholder: "Name" %>
       <%= form.text_field :description, placeholder: "Description" %>
+      <%= form.file_field :main_image %>
       <%= form.submit %>
     <% end %>
   </div>

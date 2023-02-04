@@ -48,17 +48,21 @@ class ImageController < ApplicationController
   end
 
   def destroy
-    @delete_image = Image.find_by(id: params[:id]).destroy
+    @delete_image = Image.find_by(id: params[:id])
+    if @delete_image.main_image.attached?
+      @delete_image.main_image.purge
+      status = "yes This id has image"
+      asdf = 23
+    end
+    @delete_image.destroy
     if @delete_image
       redirect_to root_path
-    else
-      asdfas = 1
     end
   end
 
   private
   def image_params
-    params.require(:image).permit(:name, :description)
+    params.require(:image).permit(:name, :description, :main_image)
   end
 
 

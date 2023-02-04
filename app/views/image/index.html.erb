@@ -5,6 +5,9 @@
     <p>
       <%= link_to single_image.name, image_path(single_image) %>
       <%= single_image.description %>
+      <% if single_image.main_image.attached? %>
+        <%= image_tag single_image.main_image %>
+      <% end %>
     </p>
 
     <p>
