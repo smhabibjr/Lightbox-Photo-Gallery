@@ -6,5 +6,6 @@ RUN apk add \
 
 COPY . /usr/src/app
 WORKDIR /usr/src/app
-RUN bundle
+RUN bundle install
+RUN rails db:migrate
 CMD ["rails","s","-b","0.0.0.0"]
