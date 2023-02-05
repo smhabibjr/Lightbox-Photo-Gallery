@@ -10,7 +10,7 @@ git clone https://github.com/smhabibjr/Lightbox-Photo-Gallery.git
 ````
 
 ````
-cd Lightbox-Photo-Gallery
+cd Pexels-Clone
 ````
 
 ### Run
