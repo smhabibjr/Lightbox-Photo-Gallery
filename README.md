@@ -1,8 +1,6 @@
 ### Screenshot
 
-![image](https://user-images.githubusercontent.com/77357735/216794440-b1b70049-8675-49e2-b7fa-ac7ed9ddc94a.png)
-
-![image](https://user-images.githubusercontent.com/77357735/216794462-b74956b3-635e-412d-8d88-5b2c81570ea6.png)
+![image](https://user-images.githubusercontent.com/77357735/216818927-bc31ea9e-0595-4b77-8b5e-e93b3167c250.png)
 
 ### Configuration
 
