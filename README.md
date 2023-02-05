@@ -6,7 +6,7 @@
 
 Clone this repository.
 ````
-git clone https://github.com/smhabibjr/Lightbox-Photo-Gallery.git
+git clone https://github.com/smhabibjr/Pexels-Clone.git
 ````
 
 ````
@@ -19,10 +19,10 @@ To run this application you don't need to install ruby or ruby on rails on your 
 
 To build a docker image. Open the terminal from your project directory.
 ````
-docker build . -t my_lightbox_photo_gallery
+docker build . -t my_pexels_clone
 ````
 Build and Run the container.
 ````
-docker run -p 3000:3000 my_lightbox_photo_gallery
+docker run -p 3000:3000 my_pexels_clone
 ````
 After running the container. Go to the browser and curl http://localhost:3000
