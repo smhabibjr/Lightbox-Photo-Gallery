@@ -1,0 +1,39 @@
+<header class="p-1 mb-3 border-bottom">
+  <div class="">
+    <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+      <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-dark text-decoration-none">
+        <%= image_tag "logo.png", class:"bi me-2", style: "height:60px; width:40" %>
+      </a>
+
+      <form class="col-12 col-lg-6 mb-6 mb-lg-0 me-lg-3">
+        <div class="row">
+          <div class="input-group col-md-4">
+            <input class="form-control py-2" type="search" placeholder="Search for free photos" id="example-search-input">
+            <span class="input-group-append">
+                <button class="btn btn-outline-secondary h-100" type="button">
+                    <i class="fa fa-search"></i>
+                </button>
+            </span>
+          </div>
+        </div>
+      </form>
+
+      <div class="col-12 col-lg-4 mb-4 mb-lg-0 me-lg-3 d-flex justify-content-center justify-content-lg-end">
+        <ul class="nav ">
+          <li><a href="#" class="nav-link px-2 link-secondary">Explore</a></li>
+          <li><a href="#" class="nav-link px-2 link-dark">License</a></li>
+          <li>
+            <%= link_to "Upload", new_image_path , class:"nav-link px-2 link-dark"%>
+          </li>
+
+          <li><a href="#" class="nav-link px-2 link-dark"><i class="fa-solid fa-ellipsis"></i></a></li>
+          <li class="d-flex align-items-center"><a href="#" class="nav-link px-2 link-dark">
+            <%= link_to "Join", new_image_path, class: "btn btn-primary",style: "background:#05a081" %>
+          </a></li>
+        </ul>
+      </div>
+
+
+    </div>
+  </div>
+</header>
