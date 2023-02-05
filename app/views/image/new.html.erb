@@ -20,7 +20,6 @@
               </div>
 
               <div class="form-group p-2 m-2">
-                <label for="exampleFormControlFile1">Example file input</label>
                 <%= form.file_field :main_image, class: "form-control-file", id: "exampleFormControlFile1" %>
                 <br>
                 <small id="emailHelp" class="form-text text-muted">Image format must be jpeg or png.</small>
@@ -28,9 +27,7 @@
 
               <div class="form-group p-2 m-2">
                 <%= form.submit "Upload image", class: "btn btn-primary" %>
-
                 <%= link_to "Go to home", root_path , class: "btn btn-dark" %>
-
               </div>
 
             <% end %>
