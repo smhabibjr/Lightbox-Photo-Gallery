@@ -8,7 +8,7 @@
 
 Clone this repository.
 ````
-https://github.com/smhabibjr/Lightbox-Photo-Gallery.git
+git clone https://github.com/smhabibjr/Lightbox-Photo-Gallery.git
 ````
 
 ````
