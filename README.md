@@ -1,6 +1,8 @@
 ### Screenshot
 
-![image](https://user-images.githubusercontent.com/77357735/216818927-bc31ea9e-0595-4b77-8b5e-e93b3167c250.png)
+## Single Page Todos App using Hotwire
+
+![image](https://user-images.githubusercontent.com/77357735/218333566-9600c1bb-e5be-4dfb-8305-faa982d1c11a.png)
 
 ### Configuration
 
